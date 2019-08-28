@@ -16,7 +16,7 @@ class CategoryCell: UITableViewCell {
     
     
     // [ updateViews ] :- Put new product data into  a cell
-    private func updateViews(category: Category){
+     func updateViews(category: Category){
         categoryImage.image = UIImage(named: category.image)
         categoryTitle.text = category.title
     }

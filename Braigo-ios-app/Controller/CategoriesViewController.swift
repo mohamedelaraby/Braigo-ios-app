@@ -15,7 +15,8 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        categoryTable.dataSource = self
+        categoryTable.delegate = self
     }
 
     
@@ -25,9 +26,20 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        //Create a reusable cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryCell {
+            //hold up the right category for the right cell
+            let category = DataServices.instance.getCategories()[indexPath.row]
+            
+            cell.updateViews(category: category)
+            
+            return cell
+        } else {
+            return CategoryCell()
+        }
     }
     
+
 
 }
 
