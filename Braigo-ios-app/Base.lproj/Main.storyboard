@@ -36,14 +36,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-mN-vaR">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-mN-vaR">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HODDIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQf-A9-etO">
+                                                    <rect key="frame" x="131" y="42" width="113" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="113" id="6jQ-El-qRG"/>
+                                                        <constraint firstAttribute="height" constant="45" id="LQE-3n-zux"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Ywb-mN-vaR" firstAttribute="leading" secondItem="HCt-Ot-Ghs" secondAttribute="leading" id="J37-C8-rpJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="Ywb-mN-vaR" secondAttribute="trailing" id="Ory-IK-JAW"/>
                                                 <constraint firstAttribute="bottom" secondItem="Ywb-mN-vaR" secondAttribute="bottom" id="Psf-MU-maN"/>
+                                                <constraint firstItem="pQf-A9-etO" firstAttribute="centerX" secondItem="HCt-Ot-Ghs" secondAttribute="centerX" id="fBc-nT-txc"/>
+                                                <constraint firstItem="pQf-A9-etO" firstAttribute="centerY" secondItem="HCt-Ot-Ghs" secondAttribute="centerY" id="rT9-OO-dZs"/>
                                                 <constraint firstItem="Ywb-mN-vaR" firstAttribute="top" secondItem="HCt-Ot-Ghs" secondAttribute="top" id="vRt-rk-bdU"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -95,4 +107,7 @@
             <point key="canvasLocation" x="-478" y="161"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="digital" width="1024" height="703"/>
+    </resources>
 </document>
