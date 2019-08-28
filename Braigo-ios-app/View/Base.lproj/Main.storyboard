@@ -24,24 +24,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-5A-8PH">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-5A-8PH">
                                 <rect key="frame" x="0.0" y="66.5" width="375" height="536.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="154" id="x7c-q7-H64" customClass="CategoryCell" customModule="Braigo_ios_app" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="154"/>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="160" id="x7c-q7-H64" customClass="CategoryCell" customModule="Braigo_ios_app">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7c-q7-H64" id="HCt-Ot-Ghs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7c-q7-H64" id="HCt-Ot-Ghs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-mN-vaR" customClass="Ca">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQf-A9-etO">
-                                                    <rect key="frame" x="131" y="54.5" width="113" height="45"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-mN-vaR">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="159.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="113" id="6jQ-El-qRG"/>
+                                                        <constraint firstAttribute="height" constant="159.5" id="NBo-qK-KOS"/>
+                                                        <constraint firstAttribute="width" constant="375" id="TeD-Cd-qYN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQf-A9-etO">
+                                                    <rect key="frame" x="131" y="57.5" width="113" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="6jQ-El-qRG"/>
                                                         <constraint firstAttribute="height" constant="45" id="LQE-3n-zux"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
@@ -50,12 +54,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="leading" secondItem="HCt-Ot-Ghs" secondAttribute="leading" id="J37-C8-rpJ"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ywb-mN-vaR" secondAttribute="trailing" id="Ory-IK-JAW"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ywb-mN-vaR" secondAttribute="bottom" id="Psf-MU-maN"/>
+                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="leading" secondItem="HCt-Ot-Ghs" secondAttribute="leading" id="1Mu-lj-VAI"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ywb-mN-vaR" secondAttribute="bottom" constant="3" id="9Fg-kh-go4"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ywb-mN-vaR" secondAttribute="trailing" id="Fy7-Gu-6Or"/>
                                                 <constraint firstItem="pQf-A9-etO" firstAttribute="centerX" secondItem="HCt-Ot-Ghs" secondAttribute="centerX" id="fBc-nT-txc"/>
+                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="top" secondItem="HCt-Ot-Ghs" secondAttribute="top" constant="3" id="goa-RY-uEv"/>
                                                 <constraint firstItem="pQf-A9-etO" firstAttribute="centerY" secondItem="HCt-Ot-Ghs" secondAttribute="centerY" id="rT9-OO-dZs"/>
-                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="top" secondItem="HCt-Ot-Ghs" secondAttribute="top" id="vRt-rk-bdU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -69,18 +73,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fGG-5A-8PH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Sz-d2-eUX"/>
+                            <constraint firstItem="P1W-1d-4le" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="7wx-vv-g5L"/>
                             <constraint firstItem="fGG-5A-8PH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A9D-uv-dIU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P1W-1d-4le" secondAttribute="trailing" constant="213" id="BZb-N4-ajN"/>
+                            <constraint firstItem="fGG-5A-8PH" firstAttribute="top" secondItem="P1W-1d-4le" secondAttribute="bottom" constant="16" id="C5i-AN-NCk"/>
                             <constraint firstItem="fGG-5A-8PH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lfr-7y-IQH"/>
-                            <constraint firstItem="P1W-1d-4le" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="bjJ-ja-vPM"/>
-                            <constraint firstItem="P1W-1d-4le" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gwP-Fj-KoU"/>
-                            <constraint firstItem="fGG-5A-8PH" firstAttribute="top" secondItem="P1W-1d-4le" secondAttribute="bottom" constant="16" id="oG5-l0-ayX"/>
+                            <constraint firstItem="P1W-1d-4le" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s0B-3Y-gTN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="bjJ-ja-vPM"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="BRAIGO" id="tRw-eP-xO6"/>
                     <connections>

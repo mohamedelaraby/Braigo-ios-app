@@ -26,6 +26,7 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         //Create a reusable cell
         if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryCell {
             //hold up the right category for the right cell
