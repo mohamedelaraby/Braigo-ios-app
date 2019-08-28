@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-/*---------------[ @IBOutlets ]--------------------*/
+/*---------------[ MARK:- @IBOutlets ]--------------------*/
     @IBOutlet weak var categoryTable: UITableView!
 
     override func viewDidLoad() {
@@ -18,6 +18,16 @@ class CategoriesViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
+/*---------------[ MARK:- TableView Methods ]--------------------*/
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataServices.instance.getCategories().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
 
 }
 

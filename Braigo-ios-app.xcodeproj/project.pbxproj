@@ -15,6 +15,7 @@
 		441BF8AC231681590032E751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441BF8AA231681590032E751 /* LaunchScreen.storyboard */; };
 		441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8B72316934E0032E751 /* CategoryCell.swift */; };
 		441BF8BA2316973E0032E751 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8B92316973E0032E751 /* Category.swift */; };
+		441BF8BD23169BDB0032E751 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8BC23169BDB0032E751 /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		441BF8AD231681590032E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441BF8B72316934E0032E751 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		441BF8B92316973E0032E751 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		441BF8BC23169BDB0032E751 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		441BF89D231681580032E751 /* Braigo-ios-app */ = {
 			isa = PBXGroup;
 			children = (
+				441BF8BB23169BC50032E751 /* Services */,
 				441BF8B6231692490032E751 /* Model */,
 				441BF8B3231691FB0032E751 /* Controller */,
 				441BF8B52316923A0032E751 /* View */,
@@ -103,6 +106,14 @@
 				441BF8B92316973E0032E751 /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		441BF8BB23169BC50032E751 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				441BF8BC23169BDB0032E751 /* DataServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				441BF8A1231681580032E751 /* CategoriesViewController.swift in Sources */,
 				441BF8BA2316973E0032E751 /* Category.swift in Sources */,
 				441BF8A7231681580032E751 /* Braigo_ios_app.xcdatamodeld in Sources */,
+				441BF8BD23169BDB0032E751 /* DataServices.swift in Sources */,
 				441BF89F231681580032E751 /* AppDelegate.swift in Sources */,
 				441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */,
 			);
