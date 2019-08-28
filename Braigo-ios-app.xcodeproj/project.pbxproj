@@ -13,6 +13,7 @@
 		441BF8A7231681580032E751 /* Braigo_ios_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8A5231681580032E751 /* Braigo_ios_app.xcdatamodeld */; };
 		441BF8A9231681590032E751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 441BF8A8231681590032E751 /* Assets.xcassets */; };
 		441BF8AC231681590032E751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441BF8AA231681590032E751 /* LaunchScreen.storyboard */; };
+		441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8B72316934E0032E751 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		441BF8A8231681590032E751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		441BF8AB231681590032E751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		441BF8AD231681590032E751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		441BF8B72316934E0032E751 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				441BF89D231681580032E751 /* Braigo-ios-app */,
+				441BF8B4231692120032E751 /* Support Files */,
 				441BF89C231681580032E751 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +59,47 @@
 		441BF89D231681580032E751 /* Braigo-ios-app */ = {
 			isa = PBXGroup;
 			children = (
-				441BF89E231681580032E751 /* AppDelegate.swift */,
-				441BF8A0231681580032E751 /* CategoriesViewController.swift */,
-				441BF8A2231681580032E751 /* Main.storyboard */,
-				441BF8A8231681590032E751 /* Assets.xcassets */,
-				441BF8AA231681590032E751 /* LaunchScreen.storyboard */,
+				441BF8B6231692490032E751 /* Model */,
+				441BF8B3231691FB0032E751 /* Controller */,
+				441BF8B52316923A0032E751 /* View */,
 				441BF8AD231681590032E751 /* Info.plist */,
-				441BF8A5231681580032E751 /* Braigo_ios_app.xcdatamodeld */,
 			);
 			path = "Braigo-ios-app";
+			sourceTree = "<group>";
+		};
+		441BF8B3231691FB0032E751 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				441BF8A0231681580032E751 /* CategoriesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		441BF8B4231692120032E751 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				441BF89E231681580032E751 /* AppDelegate.swift */,
+				441BF8A8231681590032E751 /* Assets.xcassets */,
+				441BF8AA231681590032E751 /* LaunchScreen.storyboard */,
+				441BF8A5231681580032E751 /* Braigo_ios_app.xcdatamodeld */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		441BF8B52316923A0032E751 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				441BF8A2231681580032E751 /* Main.storyboard */,
+				441BF8B72316934E0032E751 /* CategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		441BF8B6231692490032E751 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 				441BF8A1231681580032E751 /* CategoriesViewController.swift in Sources */,
 				441BF8A7231681580032E751 /* Braigo_ios_app.xcdatamodeld in Sources */,
 				441BF89F231681580032E751 /* AppDelegate.swift in Sources */,
+				441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
