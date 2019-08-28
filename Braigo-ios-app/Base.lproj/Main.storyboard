@@ -28,6 +28,27 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-5A-8PH">
                                 <rect key="frame" x="0.0" y="66.5" width="375" height="536.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="129" id="x7c-q7-H64">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="129"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7c-q7-H64" id="HCt-Ot-Ghs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-mN-vaR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="leading" secondItem="HCt-Ot-Ghs" secondAttribute="leading" id="J37-C8-rpJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ywb-mN-vaR" secondAttribute="trailing" id="Ory-IK-JAW"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ywb-mN-vaR" secondAttribute="bottom" id="Psf-MU-maN"/>
+                                                <constraint firstItem="Ywb-mN-vaR" firstAttribute="top" secondItem="HCt-Ot-Ghs" secondAttribute="top" id="vRt-rk-bdU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
