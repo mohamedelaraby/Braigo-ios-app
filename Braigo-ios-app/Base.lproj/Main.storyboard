@@ -85,17 +85,17 @@
                     <navigationItem key="navigationItem" title="BRAIGO" id="tRw-eP-xO6"/>
                     <connections>
                         <outlet property="categoryTable" destination="fGG-5A-8PH" id="vOA-zy-WWJ"/>
-                        <segue destination="AIL-Ei-ypN" kind="show" id="Bgp-Ao-DJi"/>
+                        <segue destination="AIL-Ei-ypN" kind="show" identifier="ProductsVC" id="Bgp-Ao-DJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="341.60000000000002" y="160.56971514242881"/>
         </scene>
-        <!--View Controller-->
+        <!--Products View Controller-->
         <scene sceneID="jWg-BC-DdT">
             <objects>
-                <viewController id="AIL-Ei-ypN" sceneMemberID="viewController">
+                <viewController id="AIL-Ei-ypN" customClass="ProductsViewController" customModule="Braigo_ios_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cf6-0E-bLC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

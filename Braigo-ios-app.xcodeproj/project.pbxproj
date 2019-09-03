@@ -16,6 +16,7 @@
 		441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8B72316934E0032E751 /* CategoryCell.swift */; };
 		441BF8BA2316973E0032E751 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8B92316973E0032E751 /* Category.swift */; };
 		441BF8BD23169BDB0032E751 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BF8BC23169BDB0032E751 /* DataServices.swift */; };
+		44E14F98231E98940090BBCF /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E14F97231E98940090BBCF /* ProductsViewController.swift */; };
 		44FF013A231E442C001B9D2B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF0139231E442C001B9D2B /* ProductCell.swift */; };
 		44FF013C231E49BE001B9D2B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF013B231E49BE001B9D2B /* Product.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		441BF8B72316934E0032E751 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		441BF8B92316973E0032E751 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		441BF8BC23169BDB0032E751 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		44E14F97231E98940090BBCF /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		44FF0139231E442C001B9D2B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		44FF013B231E49BE001B9D2B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				441BF8A0231681580032E751 /* CategoriesViewController.swift */,
+				44E14F97231E98940090BBCF /* ProductsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				441BF8A7231681580032E751 /* Braigo_ios_app.xcdatamodeld in Sources */,
 				441BF8BD23169BDB0032E751 /* DataServices.swift in Sources */,
 				441BF89F231681580032E751 /* AppDelegate.swift in Sources */,
+				44E14F98231E98940090BBCF /* ProductsViewController.swift in Sources */,
 				44FF013A231E442C001B9D2B /* ProductCell.swift in Sources */,
 				441BF8B82316934E0032E751 /* CategoryCell.swift in Sources */,
 			);

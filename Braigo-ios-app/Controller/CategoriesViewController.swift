@@ -10,7 +10,7 @@ import UIKit
 
 class CategoriesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-/*---------------[ MARK:- @IBOutlets ]--------------------*/
+/*---------------[ MARK:- @IBOutlets ]-----------------------------*/
     @IBOutlet weak var categoryTable: UITableView!
 
     override func viewDidLoad() {
@@ -41,6 +41,26 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     }
     
 
+    // Find the propariate category that is tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        // Get the propariate category  row which is tapped
+        let category = DataServices.instance.getCategories()[indexPath.row]
+        
+        //Perform a segue
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+        
+    }
+    
+    //Set up the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if let productVC = segue.destination as? ProductsViewController {
+        productVC.initProducts(forCategory: sender as! Category)
+        }
+    }
+    
 
+    
+    
 }
 

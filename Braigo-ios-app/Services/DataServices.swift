@@ -59,7 +59,7 @@ class DataServices{
     }
     
     //[ getProduct ] :- Return Dummey Products Data
-    private func getProduct(forCategoryTitle title: String) -> [Product] {
+    public func getProduct(forCategoryTitle title: String) -> [Product] {
         switch title {
         case "SHIRTS":
             return getShirts()
