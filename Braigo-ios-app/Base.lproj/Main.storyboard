@@ -120,7 +120,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0us-1v-Q1Z">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0us-1v-Q1Z" customClass="ProductCell" customModule="Braigo_ios_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -162,6 +162,11 @@
                                             <constraint firstItem="jSN-Rm-t33" firstAttribute="leading" secondItem="0us-1v-Q1Z" secondAttribute="leading" id="dcG-7c-MiB"/>
                                             <constraint firstItem="TXh-f6-n7E" firstAttribute="trailing" secondItem="0us-1v-Q1Z" secondAttribute="trailingMargin" constant="8" id="tpW-uQ-HTe"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="productImage" destination="jSN-Rm-t33" id="L8T-9l-6MI"/>
+                                            <outlet property="productPrice" destination="TXh-f6-n7E" id="tGG-V7-3Ia"/>
+                                            <outlet property="productTitle" destination="MHU-nb-uRU" id="aGL-Vq-TAL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
