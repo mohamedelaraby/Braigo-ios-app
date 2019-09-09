@@ -52,15 +52,26 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
-    //Set up the segue
+    // prepare(for segue:) :- Navigate to the ProductsVC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Change the backbuttonItem Title
+        changeBarButton()
+        
+        //Set Up the destination for the segue
        if let productVC = segue.destination as? ProductsViewController {
         productVC.initProducts(forCategory: sender as! Category)
         }
     }
     
 
-    
+/*-----------------[ MARK:- Custom Actions ]------------------------------------ */
+    //Change the title of the bar button
+    private func changeBarButton(){
+        let barButton = UIBarButtonItem()
+            barButton.title = ""
+        navigationItem.backBarButtonItem = barButton
+    }
     
 }
 

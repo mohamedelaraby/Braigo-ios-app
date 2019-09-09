@@ -28,6 +28,10 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     // initProducts :- Get the propriate product for the propriate category
     func initProducts(forCategory category: Category){
         products = DataServices.instance.getProduct(forCategoryTitle: category.title)
+        
+        //Change the bar title for the product title
+        navigationItem.title = category.title
+    
     }
     
     
@@ -40,11 +44,11 @@ class ProductsViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     //Asks your data source object for the cell that corresponds to the specified item in the collection view.
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductVC", for: indexPath) as? ProductCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCell {
             
             let product = products[indexPath.row]
         
-           cell.updateViews(product: product)
+            cell.updateViews(product: product)
             
             return cell
         }

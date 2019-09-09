@@ -103,8 +103,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNN-yR-57q">
                                 <rect key="frame" x="16" y="30" width="79" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="146" id="czh-Pp-2my"/>
-                                    <constraint firstAttribute="height" constant="20.5" id="ogy-qh-Fem"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="UJ4-tV-5IK"/>
+                                    <constraint firstAttribute="width" constant="79" id="j5u-ti-glv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -120,7 +120,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0us-1v-Q1Z" customClass="ProductCell" customModule="Braigo_ios_app" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="0us-1v-Q1Z" customClass="ProductCell" customModule="Braigo_ios_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="171" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -174,14 +174,18 @@
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="0.93205800513698622" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="D9P-pO-kRJ" firstAttribute="bottom" secondItem="fhU-I5-B1S" secondAttribute="bottom" id="Dgf-SA-GaN"/>
+                            <constraint firstItem="GNN-yR-57q" firstAttribute="top" secondItem="D9P-pO-kRJ" secondAttribute="top" constant="30" id="E4q-eL-YaF"/>
+                            <constraint firstItem="GNN-yR-57q" firstAttribute="leading" secondItem="D9P-pO-kRJ" secondAttribute="leading" constant="16" id="LMh-eP-tji"/>
+                            <constraint firstItem="D9P-pO-kRJ" firstAttribute="trailing" secondItem="GNN-yR-57q" secondAttribute="trailing" constant="280" id="PVu-OU-GIp"/>
                             <constraint firstItem="D9P-pO-kRJ" firstAttribute="trailing" secondItem="fhU-I5-B1S" secondAttribute="trailing" id="QCR-kP-7bq"/>
-                            <constraint firstItem="GNN-yR-57q" firstAttribute="leading" secondItem="D9P-pO-kRJ" secondAttribute="leading" constant="16" id="SIU-cZ-2Vw"/>
                             <constraint firstItem="fhU-I5-B1S" firstAttribute="leading" secondItem="D9P-pO-kRJ" secondAttribute="leading" id="dZt-pd-Gzt"/>
-                            <constraint firstItem="GNN-yR-57q" firstAttribute="top" secondItem="D9P-pO-kRJ" secondAttribute="top" constant="30" id="h1g-Jf-U9k"/>
-                            <constraint firstItem="fhU-I5-B1S" firstAttribute="top" secondItem="GNN-yR-57q" secondAttribute="bottom" constant="16" id="uIl-m9-MIK"/>
+                            <constraint firstItem="fhU-I5-B1S" firstAttribute="top" secondItem="GNN-yR-57q" secondAttribute="bottom" constant="16" id="xdF-P4-bX8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D9P-pO-kRJ"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="fhU-I5-B1S" id="3V3-8W-7HN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZN-aG-68C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

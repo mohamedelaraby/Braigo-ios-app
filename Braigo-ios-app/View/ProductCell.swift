@@ -20,6 +20,6 @@ class ProductCell: UICollectionViewCell {
     public func updateViews(product: Product){
         productImage.image = UIImage(named: product.imageName)
         productTitle.text = product.title
-        productPrice.text = product.title
+        productPrice.text = product.price
     }
 }
